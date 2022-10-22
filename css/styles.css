@@ -2,12 +2,13 @@
   --primary-text-color: #212121;
   --secondary-text-color: #757575;
   --accent-color: #2196f3;
+  --logo-color: #000000;
+  --footer-contact-color: rgba(255, 255, 255, 0.6);
   --primary-bgc: #ffffff;
   --secondary-bgc: #f5f4fa;
-  --logo-color: #000000;
   --hero-bgc: #2f303a;
   --footer-bgc: #2f303a;
-  --footer-contact-color: rgba(255, 255, 255, 0.6);
+  --hero-btn-active-color: #188ce8;
 }
 
 body {
@@ -21,6 +22,14 @@ body {
 }
 .list {
   list-style: none;
+}
+
+.btn {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  text-align: center;
+  border-radius: 4px;
 }
 
 .visually-hidden {
@@ -96,25 +105,18 @@ body {
   color: var(--primary-bgc);
 }
 .hero-btn {
-  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   display: flex;
   align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
   background-color: var(--accent-color);
   color: var(--primary-bgc);
-  cursor: pointer;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  border-color: transparent;
 }
 .hero-btn:hover,
 .hero-btn:focus {
-  background-color: var(--primary-bgc);
-  color: var(--accent-color);
+  background: var(--hero-btn-active-color);
 }
 
 /*-------------Section--------------*/
@@ -159,6 +161,7 @@ body {
   color: var(--primary-text-color);
 }
 .team-profession {
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -175,6 +178,7 @@ body {
 }
 .footer-address {
   font-style: normal;
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
 }
@@ -193,21 +197,16 @@ body {
 
 /*-------------------Фільтр---------------------*/
 
-.filter-button {
-  font-family: inherit;
+.filter-btn {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
-  text-align: center;
   color: var(--primary-text-color);
-  cursor: pointer;
   background: var(--secondary-bgc);
-  border-radius: 4px;
-  border-color: transparent;
 }
 
-.filter-button:hover,
-.filter-button:focus {
+.filter-btn:hover,
+.filter-btn:focus {
   background-color: var(--accent-color);
   color: var(--primary-bgc);
 }
